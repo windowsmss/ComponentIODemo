@@ -1,0 +1,3 @@
+<app-first-child-component (srcSubjectAdded)="pushSourceSubject($event)"></app-first-child-component>
+<hr><hr>
+<app-secong-child-component *ngFor="let sub of subjectsIWantToLearn" [sourceSubject] = "sub"></app-secong-child-component>
